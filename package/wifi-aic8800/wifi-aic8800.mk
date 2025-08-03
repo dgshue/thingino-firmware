@@ -63,8 +63,8 @@ define WIFI_AIC8800_INSTALL_FIRMWARE
 			$(@D)/USB/driver_fw/fw/aic8800D80X2/*; \
 	fi
 	if [ "$(BR2_PACKAGE_WIFI_AIC8800_USB_8800DC)" = "y" ]; then \
-		$(INSTALL) -m 0755 -d $(TARGET_DIR)/lib/firmware/aic8800DC; \
-		$(INSTALL) -m 0644 -t $(TARGET_DIR)/lib/firmware/aic8800DC/ \
+		$(INSTALL) -m 0755 -d $(TARGET_DIR)/lib/firmware; \
+		$(INSTALL) -m 0644 -t $(TARGET_DIR)/lib/firmware/ \
 			$(@D)/USB/driver_fw/fw/aic8800DC/*; \
 	fi
 
@@ -80,8 +80,8 @@ define WIFI_AIC8800_INSTALL_FIRMWARE
 			$(@D)/SDIO/driver_fw/fw/aic8800D80/*; \
 	fi
 	if [ "$(BR2_PACKAGE_WIFI_AIC8800_SDIO_8800DC)" = "y" ]; then \
-		$(INSTALL) -m 0755 -d $(TARGET_DIR)/lib/firmware/aic8800DC; \
-		$(INSTALL) -m 0644 -t $(TARGET_DIR)/lib/firmware/aic8800DC/ \
+		$(INSTALL) -m 0755 -d $(TARGET_DIR)/lib/firmware; \
+		$(INSTALL) -m 0644 -t $(TARGET_DIR)/lib/firmware/ \
 			$(@D)/SDIO/driver_fw/fw/aic8800DC/*; \
 	fi
 
